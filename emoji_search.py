@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 import click
 from pprint import pprint
 import re
