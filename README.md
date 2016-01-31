@@ -4,7 +4,12 @@ A commandline utility to search across Slack for messages that were reacted to w
 
 ## Installation
 
-Ensure Python and virtualenv are set up. If you've run the [laptop script](https://github.com/18F/laptop), you're all good.
+Ensure Python, [pip](https://pip.pypa.io/en/stable/installing/), [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html) and [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html) are set up. If you've run the [laptop script](https://github.com/18F/laptop), you're all good.
+
+Assuming you are using Python 2.7.9+ or 3.4+ the following steps should work:
+
+    $ python -m ensurepip
+    $ pip install virtualenv virtualenvwrapper
 
 Clone the repo, set up a python virtualenvironment, and install requirements:
 
@@ -41,7 +46,7 @@ To query for messages reacted to with the :evergreen_tree: emoji between Nov 2, 
                                    --enddate 11-02-2015 \
                                    --outfile evergreen.txt
 All flags are optional except for --emoji. If no destination file is provided, results will be written to the terminal.
-    
+
 ## Public Domain
 18F's work on this project is in the worldwide [public domain](LICENSE.md).
 
