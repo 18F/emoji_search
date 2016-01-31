@@ -8,7 +8,7 @@ Ensure Python and virtualenv are set up. If you've run the [laptop script](https
 
 Clone the repo, set up a python virtualenvironment, and install requirements:
 
-    $ git clone thing ~/emoji_search
+    $ git clone https://github.com/18F/emoji_search.git ~/emoji_search
     $ cd ~/emoji_search
     $ mkvirtualenv emoji_search
     $ pip install -r requirements.txt
