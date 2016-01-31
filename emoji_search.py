@@ -19,14 +19,14 @@ CHANNEL_ENDPOINT = 'https://slack.com/api/channels.info'
 
 
 def lookup_username(userid):
-    '''Looks up username from Slack API based on userid
+    """Looks up username from Slack API based on userid
 
     Expects:
         userid: a valid userid of form <@XXX>
 
     Returns:
         string of username in form @YYYYY
-    '''
+    """
     userid = re.sub('[<@|>]', '', userid)
     payload = {'token': API_TOKEN, 'user': userid}
     results = requests.get(USER_ENDPOINT, params=payload).json()
@@ -36,14 +36,14 @@ def lookup_username(userid):
 
 
 def lookup_channel(channelid):
-    '''Looks up channel name from Slack API based on channelid
+    """Looks up channel name from Slack API based on channelid
 
     Expects:
         channelid: a valid userid of form <#XXX>
 
     Returns:
         string of username in form #YYYYY
-    '''
+    """
     channelid = re.sub('[<#|>]', '', channelid)
     payload = {'token': API_TOKEN, 'channel': channelid}
     results = requests.get(CHANNEL_ENDPOINT, params=payload).json()
@@ -62,14 +62,14 @@ def filter_by_date(messages, start, end):
 
 
 def format_text(text):
-    '''Replaces all userids and channelids with plaintext names
+    """Replaces all userids and channelids with plaintext names
 
     Expects:
         A string with 0 or more userids and channelids
 
     Returns:
         The same text with those ids replaced
-    '''
+    """
     text = re.sub('<@\w*>', lambda x: lookup_username(x.group()), text)
     text = re.sub('<#\w*>', lambda x: lookup_channel(x.group()), text)
     return text
