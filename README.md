@@ -2,7 +2,13 @@
 
 A commandline utility to search across Slack for messages that were reacted to with a specific emoji.
 
-## Installation
+## Installation (simple)
+
+The simplest way to install this package is to use [pip](https://pip.pypa.io/en/stable/installing/) to install the package from the [Python Package Index](https://https://pypi.python.org/pypi/slack-emoji-search):
+
+    $ pip install slack-emoji-search
+
+## Installation (detailed / developer)
 
 Ensure Python, [pip](https://pip.pypa.io/en/stable/installing/), [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html) and [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html) are set up. If you've run the [laptop script](https://github.com/18F/laptop), you're all good.
 
