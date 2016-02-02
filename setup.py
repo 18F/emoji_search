@@ -13,6 +13,10 @@ setup(
     url='https://github.com/18F/emoji_search',
     license='CC0 1.0 Universal',
     py_modules=['emoji_search'],
+    install_requires=[
+        "click",
+        "requests",
+    ],
     entry_points={
         'console_scripts': [
             'emoji_search = emoji_search:get_messages',
