@@ -3,3 +3,4 @@ __pycache__
 api_token.py
 build/
 dist/
+.DS_Store
