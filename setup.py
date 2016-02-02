@@ -9,7 +9,7 @@ setup(
     version='0.0.1',
     description='Search across Slack for messages with a specific emoji.',
     author='Micah Saul',
-    author_email='micah.sual@gsa.gov',
+    author_email='Micah.Saul@gsa.gov',
     url='https://github.com/18F/emoji_search',
     license='CC0 1.0 Universal',
     py_modules=['emoji_search'],
