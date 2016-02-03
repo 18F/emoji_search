@@ -1,6 +1,8 @@
 # Slack Emoji Search
 
-A commandline utility to search across Slack for messages that were reacted to with a specific emoji.
+A commandline utility to search across Slack for messages that were reacted to with a specific emoji. For example, you might ask your teammates to [tag especially useful messages with a specific emoji](https://18f.gsa.gov/2015/12/08/using-emoji-for-knowledge-sharing/), and you can use this tool to dump a log of those messages.
+
+(If you're interested in this tool, you might also be interested in [a plugin that files emoji-tagged messages as issues in a GitHub repository](https://github.com/18F/hubot-slack-github-issues).)
 
 ## Installation (simple)
 
