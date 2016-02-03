@@ -4,7 +4,7 @@ A commandline utility to search across Slack for messages that were reacted to w
 
 ## Installation (simple)
 
-The simplest way to install this package is to use [pip](https://pip.pypa.io/en/stable/installing/) to install the package from the [Python Package Index](https://https://pypi.python.org/pypi/slack-emoji-search):
+The simplest way to install this package is to use [pip](https://pip.pypa.io/en/stable/installing/) to install the package from the [Python Package Index](https://pypi.python.org/pypi/slack-emoji-search):
 
     $ pip install slack-emoji-search
 
