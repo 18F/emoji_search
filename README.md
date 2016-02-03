@@ -2,13 +2,24 @@
 
 A commandline utility to search across Slack for messages that were reacted to with a specific emoji.
 
-## Installation
+## Installation (simple)
 
-Ensure Python and virtualenv are set up. If you've run the [laptop script](https://github.com/18F/laptop), you're all good.
+The simplest way to install this package is to use [pip](https://pip.pypa.io/en/stable/installing/) to install the package from the [Python Package Index](https://pypi.python.org/pypi/slack-emoji-search):
+
+    $ pip install slack-emoji-search
+
+## Installation (detailed / developer)
+
+Ensure Python, [pip](https://pip.pypa.io/en/stable/installing/), [virtualenv](https://virtualenv.readthedocs.org/en/latest/installation.html) and [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html) are set up. If you've run the [laptop script](https://github.com/18F/laptop), you're all good.
+
+Assuming you are using Python 2.7.9+ or 3.4+ the following steps should work:
+
+    $ python -m ensurepip
+    $ pip install virtualenv virtualenvwrapper
 
 Clone the repo, set up a python virtualenvironment, and install requirements:
 
-    $ git clone thing ~/emoji_search
+    $ git clone https://github.com/18F/emoji_search.git ~/emoji_search
     $ cd ~/emoji_search
     $ mkvirtualenv emoji_search
     $ pip install -r requirements.txt
@@ -41,7 +52,7 @@ To query for messages reacted to with the :evergreen_tree: emoji between Nov 2, 
                                    --enddate 11-02-2015 \
                                    --outfile evergreen.txt
 All flags are optional except for --emoji. If no destination file is provided, results will be written to the terminal.
-    
+
 ## Public Domain
 18F's work on this project is in the worldwide [public domain](LICENSE.md).
 

@@ -1,3 +1,6 @@
 __pycache__
 *.pyc
 api_token.py
+build/
+dist/
+.DS_Store
